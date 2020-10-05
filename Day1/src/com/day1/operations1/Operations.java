@@ -2,6 +2,7 @@ package com.day1.operations1;
 
 public class Operations {
 	private int var1;
+
 	public int getVar1() {
 		return var1;
 	}
@@ -37,12 +38,11 @@ public class Operations {
 	private int var2;
 	private float var3;
 	private float var4;
-	
-	public void arthematicOperations()
-	{
-	var1 = -5 + 8 * 6;
-	var2 = (55+9) % 9 ;
-	var3 = 20 + -3*5 / 8 ;
-	var4= 5 + 15 / 3 * 2 - 8 % 3 ;
+
+	public void arthematicOperations() {
+		var1 = -5 + 8 * 6;
+		var2 = (55 + 9) % 9;
+		var3 = 20 + -3 * 5 / 8;
+		var4 = 5 + 15 / 3 * 2 - 8 % 3;
 	}
 }

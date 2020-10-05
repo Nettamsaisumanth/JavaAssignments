@@ -1,7 +1,7 @@
 package com.day1.operations1;
 
 public class Operation6 {
-	char charecter;
+	private char charecter;
 
 	public char getCharecter() {
 		return charecter;
@@ -10,10 +10,9 @@ public class Operation6 {
 	public void setCharecter(char charecter) {
 		this.charecter = charecter;
 	}
-	
-	public int asciiValue(char samplechar)
-	{
-		return (int)(samplechar);
+
+	public int asciiValue(char samplechar) {
+		return (int) (samplechar);
 	}
 
 }

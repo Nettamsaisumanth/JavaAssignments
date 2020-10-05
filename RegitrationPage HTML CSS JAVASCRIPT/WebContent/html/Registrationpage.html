@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration page</title>
+<link rel = "stylesheet" href = "Registrationpage.css"><link>
+<script type="text/javascript">  
+function validate()
+{
+	
+	var name = document.form1.fname.value;
+	var password = document.form1.pass.value;
+	var return1 = false;
+	if(name.length > 5 && password.length > 5){
+		alert("Submited successfully");
+		return1 = true;
+	}
+	return return1;
+	
+}
+
+</script>
+</head>
+<body>
+	<h1>Registration page</h1>
+	<form  method=get id = "form1" action = "sample.html">
+		<table id="table1">
+			<tr>
+				<td><label>First Name</label></td>
+				<td><input type="text" name="fname"
+					placeholder="Enter first name" required="required"></td>
+			</tr>
+			<tr>
+				<td><label>Middle Name</label></td>
+				<td><input type="text" name="mname"
+					placeholder="Enter middle name" required="required"></td>
+			</tr>
+			<tr>
+				<td><label>Last Name</label></td>
+				<td><input type="text" name="lname"
+					placeholder="Enter last name" required="required"></td>
+			</tr>
+
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" id="male" name="gender" value="male">
+					<label for="male">Male</label><br> <input type="radio"
+					id="female" name="gender" value="female"> <label
+					for="female">Female</label><br> <input type="radio" id="other"
+					name="gender" value="other"> <label for="other">Other</label></td>
+			<tr>
+				<td>Mobile number</td>
+				<td><input type="text" name="country code" value="+91" size="2" />
+					<input type="number" name="phone" placeholder="Enter mobile number"
+					required="required" size="13" /></td>
+			</tr>
+
+			<tr>
+				<td>Email</td>
+				<td><input type="email" id="emailid" placeholder="Enter emailid"
+					required="required" name="email" /></td>
+			</tr>
+
+			<tr>
+				<td>Password</td>
+				<td><input type="Password" placeholder="Enter Password"
+					id="password" name="pass" required="required"></td>
+			</tr>
+
+			<tr>
+				<td>Retype Password</td>
+				<td><input type="Password" placeholder="Retype Password"
+					id="repassword" name="repass" required="required"></td>
+			</tr>
+
+			<tr>
+				<td>Select course</td>
+				<td><select>
+						<option value="Course">Course</option>
+						<option value="BCA">BCA</option>
+						<option value="BBA">BBA</option>
+						<option value="B.Tech">B.Tech</option>
+						<option value="MBA">MBA</option>
+						<option value="MCA">MCA</option>
+						<option value="M.Tech">M.Tech</option>
+				</select></td>
+			</tr>
+
+			<tr>
+				<td>Address</td>
+				<td><textarea cols="80" rows="5" placeholder="Current Address"
+						required>  </textarea></td>
+			</tr>
+
+		</table>
+		<input type="submit" name="submit"  onsubmit="return validate()">
+
+
+
+
+
+
+
+	</form>
+</body>
+</html>

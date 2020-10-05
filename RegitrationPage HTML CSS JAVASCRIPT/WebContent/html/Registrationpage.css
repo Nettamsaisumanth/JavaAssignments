@@ -1,0 +1,9 @@
+@CHARSET "ISO-8859-1";
+form{
+background-color: aqua;	
+}
+.table{
+	font:bold;
+	color: red;
+	background-color: orange;
+}
