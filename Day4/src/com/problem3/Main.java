@@ -32,10 +32,6 @@ All text in bold corresponds to input and the rest corresponds to output.
  Total Amount 50000.0
 */
 
-
-
-
-
 package com.problem3;
 
 import java.util.Scanner;

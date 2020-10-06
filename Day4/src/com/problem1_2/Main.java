@@ -11,7 +11,6 @@ Explanation
 Divisors of 6 are 1,2,3 and 6. 1+2+3+6=12.
 */
 
-
 package com.problem1_2;
 
 import java.util.Scanner;
@@ -19,12 +18,12 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-Scanner scanner = new Scanner(System.in);
-System.out.println("Enter the number");
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the number");
 		AdvancedInterface advancedinterface = new MyCalculatoe();
-System.out.println("Sumof factors of given number is "+advancedinterface.divisorSum(scanner.nextInt()));
-scanner.close();
+		System.out.println("Sumof factors of given number is " + advancedinterface.divisorSum(scanner.nextInt()));
+		scanner.close();
 	}
 
 }
