@@ -1,7 +1,7 @@
 package com.excercise.dog;
 
 public class Animal {
-	void walk(){
+	void walk() {
 		System.out.println("I am walking");
 	}
 
