@@ -2,9 +2,6 @@
 Write a  code opens a text file and writes its content to the standard output. What happens if the file doesn’t exist?
 */
 
-
-
-
 package com.problem1;
 
 import java.io.File;
@@ -15,17 +12,18 @@ import java.io.IOException;
 
 public class Filehandling {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		File file = new File("C:/Users/saisumanth NETTEM/Desktop/HCL THINGS/sample file.txt");
 		File file1 = new File("C:/Users/saisumanth NETTEM/Desktop/HCL THINGS/sample file1.txt");
+		FileInputStream fileinputstream = new FileInputStream(file);
+		FileOutputStream fileoutputstream = new FileOutputStream(file1);
 		try {
-			FileInputStream fileinputstream = new FileInputStream(file);
-			FileOutputStream fileoutputstream = new FileOutputStream(file1);
+
 			byte[] buffer = new byte[1024];
 			int length;
 			while ((length = fileinputstream.read(buffer)) > 0) {
 				fileoutputstream.write(buffer, 0, length);
-				System.out.println((char)length);
+				System.out.println((char) length);
 			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -35,9 +33,10 @@ public class Filehandling {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		finally{
 
+		finally {
+			fileinputstream.close();
+			fileoutputstream.close();
 		}
 
 	}

@@ -25,9 +25,6 @@ Enter the player age
 CustomException: InvalidAgeRangeException
 */
 
-
-
-
 package com.problem4;
 
 import java.util.Scanner;
@@ -35,26 +32,21 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-Scanner scanner = new Scanner(System.in);
-System.out.println("Enter the name");
-String name = scanner.next();
-System.out.println("Enter the age");
-int age = scanner.nextInt();
-try
-{
-	
-	System.out.println(CheckEligible.elegibilityCheck(name, age));
-	
-}
-catch(CustomException exception)
-{
-	System.out.println(exception);
-}
-finally
-{
-	scanner.close();
-}
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the name");
+		String name = scanner.next();
+		System.out.println("Enter the age");
+		int age = scanner.nextInt();
+		try {
+
+			System.out.println(CheckEligible.elegibilityCheck(name, age));
+
+		} catch (CustomException exception) {
+			System.out.println(exception);
+		} finally {
+			scanner.close();
+		}
 
 	}
 

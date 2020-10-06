@@ -3,7 +3,7 @@ package com.problem5;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Multiples multiples = new Multiples();
 		MultiplesThread thread1 = new MultiplesThread(multiples,2);
 		MultiplesThread thread2 = new MultiplesThread(multiples,5);

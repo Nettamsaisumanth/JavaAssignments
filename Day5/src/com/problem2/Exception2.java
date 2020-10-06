@@ -23,9 +23,6 @@ Sample Output :
 java.util.InputMismatchException
 */
 
-
-
-
 package com.problem2;
 
 import java.util.InputMismatchException;
@@ -36,24 +33,18 @@ public class Exception2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
-		try{
+		try {
 			System.out.println("Enter two numbers");
 			float output;
-		int input1 = scanner.nextInt();
-		int input2 = scanner.nextInt();
-		output = input1/input2;
-		System.out.println("Output is "+output);
-		}
-		catch(InputMismatchException ex1)
-		{
-			System.out.println("Exception occured please enter both of int types "+ex1);
-		}
-		catch(ArithmeticException ex2)
-		{
-			System.out.println("Exception occured dicision by zerp "+ex2);
-		}
-		finally
-		{
+			int input1 = scanner.nextInt();
+			int input2 = scanner.nextInt();
+			output = input1 / input2;
+			System.out.println("Output is " + output);
+		} catch (InputMismatchException ex1) {
+			System.out.println("Exception occured please enter both of int types " + ex1);
+		} catch (ArithmeticException ex2) {
+			System.out.println("Exception occured dicision by zerp " + ex2);
+		} finally {
 			scanner.close();
 		}
 

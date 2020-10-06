@@ -6,7 +6,7 @@ public class DemoThread2 extends Thread {
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
+		
 		System.out.println("running child Thread in loop : ");
 		for (temp = 0; temp < 10; temp++) {
 			System.out.println(Thread.currentThread() + "  " + temp);
